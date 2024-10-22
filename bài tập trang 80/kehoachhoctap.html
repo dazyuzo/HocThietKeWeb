@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kế Hoạch Học Tập</title>
+</head>
+<body style="background-color: #f0f8ff; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;">
+    <div>
+        <h1>Kế Hoạch Học Tập</h1>
+        <p><b>CHƯA XÁC ĐỊNH</b></p>
+        <a href="/thongtincanhan.html" style="display: block; margin: 10px 0; color: blue; text-decoration: none;">Thông Tin Cá Nhân</a>
+        <a href="/sothich.html" style="display: block; margin: 10px 0; color: blue; text-decoration: none;">Sở Thích</a>
+        <a href="/lienhe.html" style="display: block; margin: 10px 0; color: blue; text-decoration: none;">Liên Hệ</a>
+        <button onclick="changeBackgroundColor()" style="margin-top: 20px; padding: 10px; cursor: pointer;">Đổi màu nền</button>
+    </div>
+
+    <script>
+        function changeBackgroundColor() {
+            
+            const colors = ['#f0f8ff', '#add8e6', '#e6e6fa', '#d3f8d3', '#ffe4b5'];
+          
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+       
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>

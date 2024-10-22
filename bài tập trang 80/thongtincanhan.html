@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin Cá Nhân</title>
+</head>
+<body style="background-color: #cce7ff; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="text-align: center; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h1>Thông Tin Cá Nhân</h1>
+        <p><b>Tên:</b> Phùng Đức Duy Khang</p>
+        <p><b>Tuổi:</b> 18</p>
+        <p><b>Ngày sinh:</b> 14/04/2006</p>
+        <p><b>Điện thoại:</b> 0789410337</p>
+        <p><b>Địa chỉ:</b> A32 Nguyễn Trãi</p>
+        <p><b>Email:</b> khangphung1404.dk9@gmail.com</p>
+
+        <a href="/kehoachhoctap.html">Kế hoạch học tập</a>
+        <a href="/sothich.html">Sở Thích</a>
+        <a href="/lienhe.html">Liên Hệ</a>
+
+        <button onclick="changeBackgroundColor()">Đổi màu nền</button>
+    </div>
+
+    <script>
+        function changeBackgroundColor() {
+            // Mảng các màu có thể được chọn
+            const colors = ['#f4f4f4', '#cce7ff', '#ffe4b3', '#d4edda', '#f8d7da'];
+            // Chọn ngẫu nhiên một màu từ mảng
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // Đặt màu nền mới cho body
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>

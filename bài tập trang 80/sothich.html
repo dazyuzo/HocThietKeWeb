@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở Thích</title>
+</head>
+<body style="background-color: #f0f8ff; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;">
+    <div>
+        <h2>Sở Thích Cá Nhân</h2>
+        <ol style="padding-left: 20px; text-align: left;">
+            <li>Chơi thể thao</li>
+            <li>Chơi game</li>
+            <li>Ngủ</li>
+        </ol>
+        <a href="/thongtincanhan.html" style="display: block; margin: 10px 0; color: blue; text-decoration: none;">Thông Tin Cá Nhân</a>
+        <a href="/kehoachhoctap.html" style="display: block; margin: 10px 0; color: blue; text-decoration: none;">Kế hoạch học tập</a>
+        <a href="/lienhe.html" style="display: block; margin: 10px 0; color: blue; text-decoration: none;">Liên Hệ</a>
+        <button onclick="changeBackgroundColor()" style="margin-top: 20px; padding: 10px; cursor: pointer;">Đổi màu nền</button>
+    </div>
+
+    <script>
+        function changeBackgroundColor() {
+            // Mảng các màu có thể được chọn
+            const colors = ['#f0f8ff', '#add8e6', '#e6e6fa', '#d3f8d3', '#ffe4b5'];
+            // Chọn ngẫu nhiên một màu từ mảng
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // Đặt màu nền mới cho body
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
